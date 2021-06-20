@@ -1,0 +1,122 @@
+\begin{tikzpicture}[/tikz/background rectangle/.style={fill={rgb,1:red,1.0;green,1.0;blue,1.0}, draw opacity={1.0}}, show background rectangle]
+\begin{axis}[point meta max={nan}, point meta min={nan}, legend cell align={left}, title={}, title style={at={{(0.5,1)}}, anchor={south}, font={{\fontsize{14 pt}{18.2 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, legend style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, line width={1}, solid, fill={rgb,1:red,1.0;green,1.0;blue,1.0}, fill opacity={1.0}, text opacity={1.0}, font={{\fontsize{8 pt}{10.4 pt}\selectfont}}, text={rgb,1:red,0.0;green,0.0;blue,0.0}, at={(0.98, 0.98)}, anchor={north east}}, axis background/.style={fill={rgb,1:red,1.0;green,1.0;blue,1.0}, opacity={1.0}}, anchor={north west}, xshift={1.0mm}, yshift={-1.0mm}, width={65.31mm}, height={65.31mm}, scaled x ticks={false}, xlabel={Number of threads}, x tick style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}}, x tick label style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}, rotate={0}}, xlabel style={at={(ticklabel cs:0.5)}, anchor=near ticklabel, font={{\fontsize{11 pt}{14.3 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, xmajorgrids={true}, xmin={0.07000000000000006}, xmax={32.93}, xtick={{5.0,10.0,15.0,20.0,25.0,30.0}}, xticklabels={{$5$,$10$,$15$,$20$,$25$,$30$}}, xtick align={inside}, xticklabel style={font={{\fontsize{8 pt}{10.4 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, x grid style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={0.1}, line width={0.5}, solid}, x axis line style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, line width={1}, solid}, scaled y ticks={false}, ylabel={Runtime in seconds}, y tick style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}}, y tick label style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}, rotate={0}}, ylabel style={at={(ticklabel cs:0.5)}, anchor=near ticklabel, font={{\fontsize{11 pt}{14.3 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, ymajorgrids={true}, ymin={1.14525420584}, ymax={4.51813845416}, ytick={{1.5,2.0,2.5,3.0,3.5,4.0,4.5}}, yticklabels={{$1.5$,$2.0$,$2.5$,$3.0$,$3.5$,$4.0$,$4.5$}}, ytick align={inside}, yticklabel style={font={{\fontsize{8 pt}{10.4 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, y grid style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={0.1}, line width={0.5}, solid}, y axis line style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, line width={1}, solid}]
+    \addplot[color={rgb,1:red,0.0;green,0.6056;blue,0.9787}, name path={ae358947-4395-477e-8149-7323b6ee278f}, draw opacity={1.0}, line width={1}, solid]
+        table[row sep={\\}]
+        {
+            \\
+            1.0  4.422679466  \\
+            2.0  2.524244405  \\
+            3.0  2.132141205  \\
+            4.0  1.839279239  \\
+            5.0  1.644677191  \\
+            6.0  1.530516917  \\
+            7.0  1.445640059  \\
+            8.0  1.408607663  \\
+            9.0  1.375686695  \\
+            10.0  1.346626858  \\
+            11.0  1.322859775  \\
+            12.0  1.323155438  \\
+            13.0  1.243999707  \\
+            14.0  1.283793486  \\
+            15.0  1.247207447  \\
+            16.0  1.320211772  \\
+            17.0  1.287916529  \\
+            18.0  1.303237608  \\
+            19.0  1.291403878  \\
+            20.0  1.293022561  \\
+            21.0  1.314049713  \\
+            22.0  1.299588943  \\
+            23.0  1.273019409  \\
+            24.0  1.325215969  \\
+            25.0  1.313021152  \\
+            26.0  1.327385401  \\
+            27.0  1.326677966  \\
+            28.0  1.27709533  \\
+            29.0  1.240713194  \\
+            30.0  1.322520707  \\
+            31.0  1.351825681  \\
+            32.0  1.285512745  \\
+        }
+        ;
+    \addlegendentry {Parallel Jacobi}
+    \addplot[color={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, name path={36afc681-61ff-41f8-822d-618f05b88323}, draw opacity={1.0}, line width={1}, solid]
+        table[row sep={\\}]
+        {
+            \\
+            1.0  4.369317578  \\
+            2.0  2.62211668  \\
+            3.0  2.272202264  \\
+            4.0  1.981624177  \\
+            5.0  1.717090408  \\
+            6.0  1.685157488  \\
+            7.0  1.598148496  \\
+            8.0  1.583660852  \\
+            9.0  1.505631166  \\
+            10.0  1.498547447  \\
+            11.0  1.483399143  \\
+            12.0  1.45063757  \\
+            13.0  1.438568458  \\
+            14.0  1.472142854  \\
+            15.0  1.396231387  \\
+            16.0  1.490344658  \\
+            17.0  1.436845347  \\
+            18.0  1.46702703  \\
+            19.0  1.462510015  \\
+            20.0  1.457737427  \\
+            21.0  1.452140174  \\
+            22.0  1.452375376  \\
+            23.0  1.446417513  \\
+            24.0  1.465738321  \\
+            25.0  1.471736058  \\
+            26.0  1.463289487  \\
+            27.0  1.452083867  \\
+            28.0  1.480736798  \\
+            29.0  1.46846099  \\
+            30.0  1.473865418  \\
+            31.0  1.467577376  \\
+            32.0  1.497972085  \\
+        }
+        ;
+    \addlegendentry {Serial Jacobi}
+\end{axis}
+\begin{axis}[point meta max={nan}, point meta min={nan}, legend cell align={left}, title={}, title style={at={{(0.5,1)}}, anchor={south}, font={{\fontsize{14 pt}{18.2 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, legend style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, line width={1}, solid, fill={rgb,1:red,1.0;green,1.0;blue,1.0}, fill opacity={1.0}, text opacity={1.0}, font={{\fontsize{8 pt}{10.4 pt}\selectfont}}, text={rgb,1:red,0.0;green,0.0;blue,0.0}, at={(1.02, 1)}, anchor={north west}}, axis background/.style={fill={rgb,1:red,1.0;green,1.0;blue,1.0}, opacity={1.0}}, anchor={north west}, xshift={68.31mm}, yshift={-1.0mm}, width={65.31mm}, height={65.31mm}, scaled x ticks={false}, xlabel={Number of threads}, x tick style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}}, x tick label style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}, rotate={0}}, xlabel style={at={(ticklabel cs:0.5)}, anchor=near ticklabel, font={{\fontsize{11 pt}{14.3 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, xmajorgrids={true}, xmin={0.07000000000000006}, xmax={32.93}, xtick={{5.0,10.0,15.0,20.0,25.0,30.0}}, xticklabels={{$5$,$10$,$15$,$20$,$25$,$30$}}, xtick align={inside}, xticklabel style={font={{\fontsize{8 pt}{10.4 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, x grid style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={0.1}, line width={0.5}, solid}, x axis line style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, line width={1}, solid}, scaled y ticks={false}, ylabel={Parallel speedup}, y tick style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}}, y tick label style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}, rotate={0}}, ylabel style={at={(ticklabel cs:0.5)}, anchor=near ticklabel, font={{\fontsize{11 pt}{14.3 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, ymajorgrids={true}, ymin={0.9820656635944476}, ymax={1.1894308258987007}, ytick={{1.0,1.05,1.1,1.1500000000000001}}, yticklabels={{$1.00$,$1.05$,$1.10$,$1.15$}}, ytick align={inside}, yticklabel style={font={{\fontsize{8 pt}{10.4 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, y grid style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={0.1}, line width={0.5}, solid}, y axis line style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, line width={1}, solid}]
+    \addplot[color={rgb,1:red,0.0;green,0.6056;blue,0.9787}, name path={6ef928f1-7a55-4927-8446-a213bbd616d0}, draw opacity={1.0}, line width={1}, solid]
+        table[row sep={\\}]
+        {
+            \\
+            1.0  0.9879344889426812  \\
+            2.0  1.0387728996471717  \\
+            3.0  1.0656903298297264  \\
+            4.0  1.0773916950627855  \\
+            5.0  1.0440288327680711  \\
+            6.0  1.1010381324651508  \\
+            7.0  1.1054954420019985  \\
+            8.0  1.124273915014191  \\
+            9.0  1.094457896170901  \\
+            10.0  1.1128156534956024  \\
+            11.0  1.1213578120931222  \\
+            12.0  1.09634705669403  \\
+            13.0  1.156405785230623  \\
+            14.0  1.1467131357605282  \\
+            15.0  1.1194860889890117  \\
+            16.0  1.1288678752972066  \\
+            17.0  1.115635458235508  \\
+            18.0  1.1256788639267075  \\
+            19.0  1.1324962236175042  \\
+            20.0  1.1273874648193398  \\
+            21.0  1.105087699220098  \\
+            22.0  1.1175651992293074  \\
+            23.0  1.1362101023551638  \\
+            24.0  1.1060373216797539  \\
+            25.0  1.120877645998501  \\
+            26.0  1.102384797887347  \\
+            27.0  1.0945262559670792  \\
+            28.0  1.1594567478372972  \\
+            29.0  1.1835620005504672  \\
+            30.0  1.1144365530149691  \\
+            31.0  1.0856261991667253  \\
+            32.0  1.1652720603715214  \\
+        }
+        ;
+\end{axis}
+\end{tikzpicture}

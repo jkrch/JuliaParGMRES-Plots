@@ -1,0 +1,2 @@
+nrows ncols nnz isconverged iters nrests nprods abstol reltol
+10000000 10000000 49984105 false 100 5 106 0.0 1.0e-99

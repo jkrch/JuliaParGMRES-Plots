@@ -1,0 +1,15 @@
+solver = gmres
+bench = matrix
+matrix = sprand_sdd!/1e6 sprand_sdd!/1e7 Bourchtein/atmosmodd Sandia/ASIC_680ks Freescale/circuit5M_dc Janna/CoupCons3D Fluorem/RM07R Martin/marine1 CEMW/tmt_unsym VLSI/vas_stokes_1M
+size = 0
+kernels = par
+formats = csr
+orths = dgks
+precons = none
+nthreads = 32 16 8 4
+nsamples = 100
+niter = 100
+small_tol = true
+omp_serial = false
+ser_threads = false
+count_flops = false

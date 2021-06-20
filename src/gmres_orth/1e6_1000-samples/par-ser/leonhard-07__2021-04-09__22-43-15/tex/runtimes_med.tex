@@ -1,0 +1,43 @@
+\begin{tikzpicture}[/tikz/background rectangle/.style={fill={rgb,1:red,1.0;green,1.0;blue,1.0}, draw opacity={1.0}}, show background rectangle]
+\begin{axis}[point meta max={nan}, point meta min={nan}, legend cell align={left}, title={gmres, fem2d, n=1000000}, title style={at={{(0.5,1)}}, anchor={south}, font={{\fontsize{14 pt}{18.2 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, legend style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, line width={1}, solid, fill={rgb,1:red,1.0;green,1.0;blue,1.0}, fill opacity={1.0}, text opacity={1.0}, font={{\fontsize{8 pt}{10.4 pt}\selectfont}}, text={rgb,1:red,0.0;green,0.0;blue,0.0}, at={(1.02, 1)}, anchor={north west}}, axis background/.style={fill={rgb,1:red,1.0;green,1.0;blue,1.0}, opacity={1.0}}, anchor={north west}, xshift={1.0mm}, yshift={-1.0mm}, width={145.4mm}, height={99.6mm}, scaled x ticks={false}, xlabel={Number of threads}, x tick style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}}, x tick label style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}, rotate={0}}, xlabel style={at={(ticklabel cs:0.5)}, anchor=near ticklabel, font={{\fontsize{11 pt}{14.3 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, xmajorgrids={true}, xmin={0.07000000000000006}, xmax={32.93}, xtick={{5.0,10.0,15.0,20.0,25.0,30.0}}, xticklabels={{$5$,$10$,$15$,$20$,$25$,$30$}}, xtick align={inside}, xticklabel style={font={{\fontsize{8 pt}{10.4 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, x grid style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={0.1}, line width={0.5}, solid}, x axis line style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, line width={1}, solid}, scaled y ticks={false}, ylabel={Runtime in seconds}, y tick style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}}, y tick label style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}, rotate={0}}, ylabel style={at={(ticklabel cs:0.5)}, anchor=near ticklabel, font={{\fontsize{11 pt}{14.3 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, ymajorgrids={true}, ymin={2.262709287365}, ymax={3.207325642135}, ytick={{2.4000000000000004,2.6,2.8000000000000003,3.0,3.2}}, yticklabels={{$2.4$,$2.6$,$2.8$,$3.0$,$3.2$}}, ytick align={inside}, yticklabel style={font={{\fontsize{8 pt}{10.4 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, y grid style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={0.1}, line width={0.5}, solid}, y axis line style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, line width={1}, solid}]
+    \addplot[color={rgb,1:red,0.0;green,0.6056;blue,0.9787}, name path={9b77d4cc-f003-4e24-aa03-a57b87f00cd8}, draw opacity={1.0}, line width={1}, solid]
+        table[row sep={\\}]
+        {
+            \\
+            1.0  3.180591217  \\
+            2.0  2.7760155545  \\
+            3.0  2.752490478  \\
+            4.0  2.631069012  \\
+            5.0  2.546067469  \\
+            6.0  2.5039875005  \\
+            7.0  2.4991895225  \\
+            8.0  2.440463706  \\
+            9.0  2.4405174795  \\
+            10.0  2.3995295015  \\
+            11.0  2.412186214  \\
+            12.0  2.3684704635  \\
+            13.0  2.407219849  \\
+            14.0  2.3499906575  \\
+            15.0  2.362797252  \\
+            16.0  2.374139291  \\
+            17.0  2.362704495  \\
+            18.0  2.3360914735  \\
+            19.0  2.328881384  \\
+            20.0  2.3448255795  \\
+            21.0  2.317633575  \\
+            22.0  2.3260510495  \\
+            23.0  2.365390677  \\
+            24.0  2.30756856  \\
+            25.0  2.3356673135  \\
+            26.0  2.314001364  \\
+            27.0  2.3004322285  \\
+            28.0  2.3194961035  \\
+            29.0  2.3061396515  \\
+            30.0  2.2894437125  \\
+            31.0  2.349972899  \\
+            32.0  2.332057036  \\
+        }
+        ;
+    \addlegendentry {MtSpMV.jl \& OpenBLAS, CSR, MGS}
+\end{axis}
+\end{tikzpicture}

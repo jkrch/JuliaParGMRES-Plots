@@ -1,0 +1,8 @@
+solver = spmv
+bench = size
+matrix = fem2d
+size = 10 8 65
+kernels = mkl
+formats = csr
+nthreads = 16 32
+nsamples = 10000

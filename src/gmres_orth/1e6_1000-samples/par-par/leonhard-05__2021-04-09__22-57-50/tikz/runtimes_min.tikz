@@ -1,0 +1,121 @@
+\begin{tikzpicture}[/tikz/background rectangle/.style={fill={rgb,1:red,1.0;green,1.0;blue,1.0}, draw opacity={1.0}}, show background rectangle]
+\begin{axis}[point meta max={nan}, point meta min={nan}, legend cell align={left}, title={gmres, fem2d, n=1000000}, title style={at={{(0.5,1)}}, anchor={south}, font={{\fontsize{14 pt}{18.2 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, legend style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, line width={1}, solid, fill={rgb,1:red,1.0;green,1.0;blue,1.0}, fill opacity={1.0}, text opacity={1.0}, font={{\fontsize{8 pt}{10.4 pt}\selectfont}}, text={rgb,1:red,0.0;green,0.0;blue,0.0}, at={(1.02, 1)}, anchor={north west}}, axis background/.style={fill={rgb,1:red,1.0;green,1.0;blue,1.0}, opacity={1.0}}, anchor={north west}, xshift={1.0mm}, yshift={-1.0mm}, width={145.4mm}, height={99.6mm}, scaled x ticks={false}, xlabel={Number of threads}, x tick style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}}, x tick label style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}, rotate={0}}, xlabel style={at={(ticklabel cs:0.5)}, anchor=near ticklabel, font={{\fontsize{11 pt}{14.3 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, xmajorgrids={true}, xmin={0.07000000000000006}, xmax={32.93}, xtick={{5.0,10.0,15.0,20.0,25.0,30.0}}, xticklabels={{$5$,$10$,$15$,$20$,$25$,$30$}}, xtick align={inside}, xticklabel style={font={{\fontsize{8 pt}{10.4 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, x grid style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={0.1}, line width={0.5}, solid}, x axis line style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, line width={1}, solid}, scaled y ticks={false}, ylabel={Runtime in seconds}, y tick style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}}, y tick label style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}, rotate={0}}, ylabel style={at={(ticklabel cs:0.5)}, anchor=near ticklabel, font={{\fontsize{11 pt}{14.3 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, ymajorgrids={true}, ymin={0.64025370172}, ymax={4.26096881628}, ytick={{1.0,2.0,3.0,4.0}}, yticklabels={{$1$,$2$,$3$,$4$}}, ytick align={inside}, yticklabel style={font={{\fontsize{8 pt}{10.4 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, y grid style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={0.1}, line width={0.5}, solid}, y axis line style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, line width={1}, solid}]
+    \addplot[color={rgb,1:red,0.0;green,0.6056;blue,0.9787}, name path={6e24dece-00f9-4fd4-ad7c-36eac3732b3e}, draw opacity={1.0}, line width={1}, solid]
+        table[row sep={\\}]
+        {
+            \\
+            1.0  2.788556458  \\
+            2.0  1.613485857  \\
+            3.0  1.261505494  \\
+            4.0  1.116545072  \\
+            5.0  0.991377923  \\
+            6.0  0.939214759  \\
+            7.0  0.877625957  \\
+            8.0  0.785311574  \\
+            9.0  0.791621654  \\
+            10.0  0.810114865  \\
+            11.0  0.7838274  \\
+            12.0  0.793102764  \\
+            13.0  0.774470958  \\
+            14.0  0.768278776  \\
+            15.0  0.748222247  \\
+            16.0  0.757590234  \\
+            17.0  0.772605453  \\
+            18.0  0.748778917  \\
+            19.0  0.778216459  \\
+            20.0  0.762858879  \\
+            21.0  0.776598539  \\
+            22.0  0.780980292  \\
+            23.0  0.80423202  \\
+            24.0  0.742726771  \\
+            25.0  0.805584488  \\
+            26.0  0.79054603  \\
+            27.0  0.756817811  \\
+            28.0  0.762289758  \\
+            29.0  0.773335033  \\
+            30.0  0.791639408  \\
+            31.0  0.783029067  \\
+            32.0  0.820888167  \\
+        }
+        ;
+    \addlegendentry {MtSpMV.jl \& OpenBLAS, CSR, CGS}
+    \addplot[color={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, name path={887161e3-251a-462c-85b4-8f7c4c0d0fce}, draw opacity={1.0}, line width={1}, solid]
+        table[row sep={\\}]
+        {
+            \\
+            1.0  4.158495747  \\
+            2.0  2.468797867  \\
+            3.0  2.065845767  \\
+            4.0  1.789512403  \\
+            5.0  1.554706217  \\
+            6.0  1.48555707  \\
+            7.0  1.394401951  \\
+            8.0  1.382681443  \\
+            9.0  1.321835331  \\
+            10.0  1.323921518  \\
+            11.0  1.299743146  \\
+            12.0  1.287800563  \\
+            13.0  1.281742291  \\
+            14.0  1.258434875  \\
+            15.0  1.226273681  \\
+            16.0  1.277746619  \\
+            17.0  1.289101186  \\
+            18.0  1.270797735  \\
+            19.0  1.255000562  \\
+            20.0  1.286960342  \\
+            21.0  1.286022326  \\
+            22.0  1.274307798  \\
+            23.0  1.22996694  \\
+            24.0  1.240191152  \\
+            25.0  1.299478475  \\
+            26.0  1.290355642  \\
+            27.0  1.274159363  \\
+            28.0  1.282213704  \\
+            29.0  1.303502618  \\
+            30.0  1.309321586  \\
+            31.0  1.288310535  \\
+            32.0  1.284554724  \\
+        }
+        ;
+    \addlegendentry {MtSpMV.jl \& OpenBLAS, CSR, DGKS}
+    \addplot[color={rgb,1:red,0.2422;green,0.6433;blue,0.3044}, name path={fd74894c-9a24-456b-890a-b42de45fc428}, draw opacity={1.0}, line width={1}, solid]
+        table[row sep={\\}]
+        {
+            \\
+            1.0  3.164013964  \\
+            2.0  2.269569501  \\
+            3.0  2.386878406  \\
+            4.0  2.23801508  \\
+            5.0  2.162798526  \\
+            6.0  2.15304249  \\
+            7.0  2.064981747  \\
+            8.0  2.121699579  \\
+            9.0  2.069347064  \\
+            10.0  2.11311856  \\
+            11.0  2.031901659  \\
+            12.0  2.078326562  \\
+            13.0  2.027285062  \\
+            14.0  2.069713987  \\
+            15.0  2.001863333  \\
+            16.0  2.077193769  \\
+            17.0  2.055252941  \\
+            18.0  2.09573094  \\
+            19.0  2.08584259  \\
+            20.0  2.032419047  \\
+            21.0  2.076263898  \\
+            22.0  2.128053315  \\
+            23.0  2.078834531  \\
+            24.0  2.128465698  \\
+            25.0  2.094895867  \\
+            26.0  2.116530606  \\
+            27.0  2.124895281  \\
+            28.0  2.131992496  \\
+            29.0  2.092448137  \\
+            30.0  2.11898113  \\
+            31.0  2.119606304  \\
+            32.0  2.110048936  \\
+        }
+        ;
+    \addlegendentry {MtSpMV.jl \& OpenBLAS, CSR, MGS}
+\end{axis}
+\end{tikzpicture}

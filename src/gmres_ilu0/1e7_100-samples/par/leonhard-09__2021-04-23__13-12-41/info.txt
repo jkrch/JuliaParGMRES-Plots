@@ -1,0 +1,15 @@
+solver = gmres
+bench = nthreads
+matrix = fem2d
+size = 10000000
+kernels = par
+formats = csr
+orths = dgks
+precons = parilu0
+nthreads = 1 32 1
+nsamples = 100
+niter = 100
+small_tol = true
+omp_serial = false
+ser_threads = false
+count_flops = false
